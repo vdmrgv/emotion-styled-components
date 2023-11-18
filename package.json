@@ -1,6 +1,6 @@
 {
   "name": "emotion-styled-components",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "A styled function with automatic filtering of non-standard attributes for your components.",
   "author": "Vadim Rogov <vadimrogovd@gmail.com>",

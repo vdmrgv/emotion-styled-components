@@ -27,7 +27,7 @@ To use this package you must have installed [emotion](https://emotion.sh/docs/in
 
 ## Simple Example
 
-If the styled target is a simple element (e.g. styled.div), styled-components passes through any known HTML attribute to the DOM. If it is a custom React component (e.g. styled(MyComponent)), styled-components passes through all props.
+If the styled target is a simple element (e.g. `styled.div`), styled-components passes through any known HTML attribute to the DOM. If it is a custom React component (e.g. `styled(MyComponent)`), styled-components passes through all props.
 
 This example shows how all props of the `Button` component are passed on to the DOM node that is mounted, as with React elements.
 

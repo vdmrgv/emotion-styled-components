@@ -37,11 +37,13 @@ const Button = styled(MyButton)<{ $primary?: boolean; }>`
 
 render(
   <div>
-    <Button>Normal</Button>
-    <Button $primary>Primary</Button>
+    <Button type="button">Normal</Button>
+    <Button $primary type="submit">Primary</Button>
   </div>
 );
 ```
+
+> Note how the `$primary` prop is not passed to the DOM, but type are? The styled function is smart enough to filter non-standard attributes automatically for you.
 
 It also supports all functions coming from [emotion](https://emotion.sh/docs/styled) by default
 

@@ -9,7 +9,7 @@ A `styled` function with automatic filtering of non-standard attributes base on 
 
 ### Motivation
 
-`emotion-styled-components` is the result of thinking about how we could improve the forwarding of props for the `@emotion/styled` system. In one of our projects, we used the `styled-components` system, where the forwarding of props was provided out of the box, so when we switched to `@emotion/styled`, we encountered a problem when some components issued warnings: **"Invalid attribute name"**, and tried to solve this problem. By focusing on the use case of `styled-components`, we managed to solve this problem.
+`emotion-styled-components` is the result of thinking about how we could improve props forwarding for the `@emotion/styled` system. In one of our projects we were using a `styled-components` system where the forwarding of props was provided out of the box, so when migrating to `@emotion/styled` we ran into an issue where some components were throwing warnings: `Invalid attribute name` and tried solve this problem. By focusing on the `styled-components` use case, we were able to solve this problem.
 
 ## Installation
 
@@ -27,8 +27,13 @@ To use this package you must have installed [emotion](https://emotion.sh/docs/in
 
 ## Simple Example
 
+If the styled target is a simple element (e.g. styled.div), styled-components passes through any known HTML attribute to the DOM. If it is a custom React component (e.g. styled(MyComponent)), styled-components passes through all props.
+
+This example shows how all props of the `Button` component are passed on to the DOM node that is mounted, as with React elements.
+
 ```js
 import styled from 'emotion-styled-components';
+import MyButton from '@my-ui-components';
 
 const Button = styled(MyButton)<{ $primary?: boolean; }>`
   background: ${props => props.$primary ? "#BF4F74" : "white"};

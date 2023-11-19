@@ -9,7 +9,7 @@ A `styled` function with automatic filtering of non-standard attributes base on 
 
 ### Motivation
 
-`emotion-styled-components` is the result of thinking about how we can improve prop forwarding for the `@emotion/styled` system. In one of our past projects, we used the `styled-components` system where props forwarding was provided out of the box, but when we switched to `@emotion/styled` we ran into a problem where some components were generating warnings: `Invalid attribute name` then we tried to solve this problem. Focusing on the experience of using `styled-components`, we have implemented a solution to this problem.
+`emotion-styled-components` is the result of thinking about how we can improve prop forwarding for the `@emotion/styled` system. In one of our past projects, we used the `styled-components` system where props forwarding was provided out of the box, but when we switched to `@emotion/styled` we ran into a problem where some components were generating warnings: `Invalid attribute name` then we tried to solve this problem. By focusing on the `styled-components` use case, we were able to solve this problem.
 
 ## Installation
 

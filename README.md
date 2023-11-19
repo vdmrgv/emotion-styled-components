@@ -43,7 +43,7 @@ render(
 );
 ```
 
-> Note how the `$primary` prop is not passed to the DOM, but type are? The styled function is smart enough to filter non-standard attributes automatically for you.
+> Note how the `$primary` prop is not passed to the DOM, but `type` are? The styled function is smart enough to filter non-standard attributes automatically for you.
 
 It also supports all functions coming from [emotion](https://emotion.sh/docs/styled) by default
 
